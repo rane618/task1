@@ -51,7 +51,7 @@ module.exports = (req, res) => {
         res.json({
           success: false,
           message:
-            "Username already registered. Try a different userName or reset password.",
+            "Username already registered. Try a different userName",
         });
       }
       setTimeout(() => client.close(), 10);

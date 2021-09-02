@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
       const db = client.db("register");
       const query = { username };
 
-      //get users with the email the user entered
+      //get users with the username the user entered
       const user = await db.collection("users").findOne(query);
 
       //if the username doesn't exist
